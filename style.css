@@ -9,7 +9,8 @@ ul {
     margin-left: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #429ad4;
 }
 
@@ -24,4 +25,13 @@ a, a:visited {
 .single-post .related-post article .entry-title {
     font-size: 20px;
     margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+# Search Result
+--------------------------------------------------------------*/
+
+.search-no-results #primary .page-content,
+.error404 #primary .page-content {
+    float: none;
 }
