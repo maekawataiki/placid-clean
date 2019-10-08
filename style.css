@@ -1,0 +1,27 @@
+/*
+Theme Name: Placid-Clean
+Template: placid
+Version: 1.0.7
+*/
+
+
+ul {
+    margin-left: 0;
+}
+
+a, a:visited {
+    color: #429ad4;
+}
+
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+
+.single-post article.post .entry-title {
+    font-size: 30px;
+}
+
+.single-post .related-post article .entry-title {
+    font-size: 20px;
+    margin-top: 0;
+}
