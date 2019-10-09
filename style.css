@@ -42,3 +42,11 @@ a:visited {
 .main-navigation ul li a {
     font-weight: normal;
 }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+#secondary .widget ul.children li:first-child {
+    padding-top: 10px;
+}
