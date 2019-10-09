@@ -50,3 +50,7 @@ a:visited {
 #secondary .widget ul.children li:first-child {
     padding-top: 10px;
 }
+
+#secondary .widget ul.children li:last-child {
+    padding-bottom: 0;
+}
