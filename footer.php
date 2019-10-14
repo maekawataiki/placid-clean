@@ -68,10 +68,6 @@ if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_
 	<div class="site-info">
 		<div class="container">
 			<span class="copy-right-text"><?php echo $copyright; ?></span>
-			<span class="sep"> | </span>
-			<span><a href="<?php echo esc_url(__('https://wordpress.org/', 'placid')); ?>"><?php printf(esc_html__('Proudly powered by %s', 'placid'), 'WordPress'); ?></a></span>
-			<span class="sep"> | </span>
-			<?php printf(esc_html__('Theme: %1$s by %2$s.', 'placid'), 'Placid', '<a href="https://paragonthemes.com" rel="designer">ParagonThemes</a>'); ?>
 		</div>
 		<?php placid_go_to_top(); ?>
 	</div><!-- .site-info -->

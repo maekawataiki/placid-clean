@@ -4,6 +4,23 @@ Template: placid
 Version: 1.0.7
 */
 
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Noto, Hiragino Sans, Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+}
 
 ul {
     margin-left: 0;
@@ -14,12 +31,94 @@ a:visited {
     color: #429ad4;
 }
 
+#primary {
+    padding: 0;
+}
+
+@media (min-width: 991px) {
+    #primary {
+        padding-right: 15px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-branding .site-title a:hover,
+.entry-header .entry-title a:hover {
+    text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Post
 --------------------------------------------------------------*/
 
+#primary article {
+    border: none;
+}
+
 .single-post article.post .entry-title {
     font-size: 30px;
+    text-align: center;
+}
+
+article.post .entry-meta {
+    color: #999;
+}
+
+.single-post article.post .entry-meta {
+    text-align: center;
+}
+
+.byline,
+.updated:not(.published) {
+    display: inline;
+}
+
+.single-post article.post .post-thumb img {
+    float: none;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.single-post article.post .entry-content p {
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+
+.single-post article.post .entry-content h2 {
+    background: #f7f7f7;
+    padding: 20px 15px 18px;
+    color: #333;
+    border-left: 9px solid #429ad4;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.single-post article.post .entry-content h3 {
+    letter-spacing: 1.6px;
+    padding: 0px 15px 0px;
+    border-left: 9px solid #429ad4;
+    color: #333;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+## Related Post
+--------------------------------------------------------------*/
+
+/* .related-post .row {
+    margin: 0;
+} */
+
+.related-post article {
+    box-shadow: none;
+    margin: 15px;
+    width: calc(100% / 2 - 30px)
 }
 
 /*--------------------------------------------------------------
@@ -48,8 +147,17 @@ a:visited {
 # Menu
 --------------------------------------------------------------*/
 
-.main-navigation ul li a {
+.top-header {
+    padding: 30px 0;
+}
+
+.mid-header {
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .25);
+}
+
+.mid-header .main-navigation ul li a {
     font-weight: normal;
+    font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -62,4 +170,8 @@ a:visited {
 
 #secondary .widget ul.children li:last-child {
     padding-bottom: 0;
+}
+
+#secondary .widget.popular-posts li {
+    padding: 1rem 0;
 }
