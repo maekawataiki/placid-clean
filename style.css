@@ -22,7 +22,10 @@ h6 {
     -webkit-font-smoothing: antialiased;
 }
 
-ul {
+ul,
+ol,
+li>ul,
+li>ol {
     margin-left: 0;
 }
 
