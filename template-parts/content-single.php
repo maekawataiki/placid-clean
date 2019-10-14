@@ -48,6 +48,30 @@ $hide_feature_image    = $placid_theme_options['hide-feature-image'];
 			'after'  => '</div>',
 		));
 		?>
+
+		<ul class="sns_section">
+			<li class="sns_button twitter">
+				<a href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" title="Tweet">
+					<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="sns_button hatena">
+				<a href="http://b.hatena.ne.jp/add?mode=confirm&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" target="_blank" title="hatena">
+					<i class="fa fa-hatena"></i></a>
+			</li>
+			<li class="sns_button facebook">
+				<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" target="_blank" title="Facebook">
+					<i class="fa fa-facebook-f"></i></a>
+			</li>
+			<li class="sns_button pocket">
+				<a href="http://getpocket.com/edit?url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" target="_blank" title="pocket">
+					<i class="fa fa-get-pocket"></i></a>
+			</li>
+			<li class="sns_button line">
+				<a href="http://line.me/R/msg/text/?url=<?php the_permalink(); ?>" target="_blank" title="line">
+					<i class="fa fa-line"></i></a>
+			</li>
+		</ul>
+
 	</div><!-- .entry-content -->
 
 

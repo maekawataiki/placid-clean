@@ -44,13 +44,22 @@ a:visited {
 
 @media (min-width: 991px) {
     #primary {
+        width: calc(100% / 3 * 2);
         padding-right: 15px;
+    }
+
+    #secondary {
+        width: calc(100% / 3);
     }
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+.site-branding .site-title a {
+    line-height: 40px;
+}
 
 .site-branding .site-title a:hover,
 .entry-header .entry-title a:hover {
@@ -136,14 +145,20 @@ article .entry-content h3 {
 ## Related Post
 --------------------------------------------------------------*/
 
-/* .related-post .row {
-    margin: 0;
-} */
+.related-post .row {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .related-post article {
     box-shadow: none;
     margin: 15px;
-    width: calc(100% / 2 - 30px)
+}
+
+@media (min-width: 530px) {
+    .related-post article {
+        width: calc(100% / 2 - 30px)
+    }
 }
 
 /*--------------------------------------------------------------
@@ -166,6 +181,10 @@ article .entry-content h3 {
 .search-no-results #primary .page-content,
 .error404 #primary .page-content {
     float: none;
+}
+
+.search-results article.has-post-thumbnail .entry-header {
+    width: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -197,6 +216,95 @@ article .entry-content h3 {
     padding-bottom: 0;
 }
 
-#secondary .widget.popular-posts li {
+#secondary .widget.popular-posts .wpp-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#secondary .widget.popular-posts .wpp-list li {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    width: 100%;
+}
+
+@media (min-width: 530px) and (max-width: 991px) {
+    #secondary .widget.popular-posts .wpp-list li {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+#secondary .widget.popular-posts .wpp-list li a,
+#secondary .widget.popular-posts .wpp-list li a img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# SNS
+--------------------------------------------------------------*/
+
+.sns_section {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.sns_section .sns_button {
+    display: block;
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+    text-align: center;
+    border-radius: .2rem;
+    transition: all .2s ease-in-out;
+}
+
+.sns_section .sns_button:hover {
+    background-color: #cccccc;
+}
+
+.sns_section .sns_button a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 1.5rem 1rem;
+}
+
+.sns_section .twitter {
+    background-color: #1da1f2;
+}
+
+.sns_section .facebook {
+    background-color: #3b5998;
+}
+
+.sns_section .pocket {
+    background-color: #ef4056;
+}
+
+.sns_section .line {
+    background-color: #00c300;
+}
+
+.sns_section .hatena {
+    background-color: #008fde;
+}
+
+.sns_section .sns_button .fa-hatena:before {
+    content: "B!" !important;
+    font-family: Verdana !important;
+    font-weight: bold !important;
+    font-style: normal;
+}
+
+.sns_section .sns_button .fa-line:before {
+    content: "LINE" !important;
+    font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif !important;
+    font-weight: bold !important;
+    font-style: normal;
 }
