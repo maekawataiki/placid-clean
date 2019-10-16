@@ -183,8 +183,10 @@ article .entry-content h3 {
     float: none;
 }
 
-.search-results article.has-post-thumbnail .entry-header {
-    width: 50%;
+@media (min-width: 767px) {
+    .search-results article.has-post-thumbnail .entry-header {
+        width: 50%;
+    }
 }
 
 /*--------------------------------------------------------------
