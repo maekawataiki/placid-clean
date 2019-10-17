@@ -32,3 +32,18 @@ function placid_posted_on()
     echo '<span class="poston">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 }
+
+/**
+ * Inject code to head
+ */
+
+function meta_headcustomtags()
+{
+    $headcustomtag = <<<EOM
+
+<script data-ad-client="ca-pub-1802321652165297" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+EOM;
+    echo $headcustomtag;
+}
+add_action('wp_head', 'meta_headcustomtags', 99);
