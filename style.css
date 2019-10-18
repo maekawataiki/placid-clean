@@ -101,8 +101,7 @@ article.post .entry-meta {
 .single-post article.post .entry-content p,
 .single-post article.post .entry-content ul,
 .single-post article.post .entry-content table,
-.single-post article.post .entry-content figure,
-.single-post article.post .entry-content div {
+.single-post article.post .entry-content figure {
     font-size: 17px;
     margin-bottom: 60px;
 }
@@ -143,8 +142,7 @@ article .entry-content h3 {
 .page article.page .entry-content p,
 .page article.page .entry-content ul,
 .page article.page .entry-content table,
-.page article.page .entry-content figure,
-.page article.page .entry-content div {
+.page article.page .entry-content figure {
     font-size: 17px;
     margin-bottom: 60px;
 }
@@ -317,4 +315,12 @@ article .entry-content h3 {
     font-family: 'ヒラギノ角ゴ ProN W3', Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif !important;
     font-weight: bold !important;
     font-style: normal;
+}
+
+/*--------------------------------------------------------------
+# Toggle
+--------------------------------------------------------------*/
+
+.wp-block-ub-content-toggle {
+    margin-bottom: 60px;
 }
