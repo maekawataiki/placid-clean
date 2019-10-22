@@ -221,6 +221,20 @@ article .entry-content h3 {
     font-size: 14px;
 }
 
+.main-navigation ul ul {
+    background: #ffffff;
+}
+
+.main-navigation li li {
+    border-bottom: none;
+}
+
+@media (max-width: 1023px) {
+    .main-navigation ul ul>li>a {
+        padding: 0 20px;
+    }
+}
+
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
