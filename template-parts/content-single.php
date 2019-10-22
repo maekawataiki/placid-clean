@@ -23,7 +23,7 @@ $hide_feature_image    = $placid_theme_options['hide-feature-image'];
 		<?php
 		endif; ?>
 
-		<ul class="sns_section mt-2">
+		<ul class="sns_section">
 			<li class="sns_button twitter">
 				<a href="http://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" title="Tweet">
 					<i class="fa fa-twitter"></i></a>
