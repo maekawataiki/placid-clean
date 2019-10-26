@@ -358,3 +358,39 @@ article .entry-content h3 {
 .wp-block-ub-content-toggle {
     margin-bottom: 60px;
 }
+
+/*--------------------------------------------------------------
+# Fukidashi
+--------------------------------------------------------------*/
+
+.fukidashi img {
+    border-radius: 50%;
+    border: 3px solid #429ad4;
+}
+
+.fukidashi>div {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 60px 30px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+}
+
+.fukidashi>div:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+}
+
+.fukidashi>div>p {
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+}
