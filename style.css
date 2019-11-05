@@ -401,9 +401,15 @@ article .entry-content h3 {
 --------------------------------------------------------------*/
 
 .appreach {
+    border: 3px solid #eee;
+    /*ボーダー色*/
+}
+
+.appreach {
     text-align: left;
-    padding: 10px;
-    border: 1px solid #7C7C7C;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 2px;
     overflow: hidden;
 }
 
@@ -413,8 +419,10 @@ article .entry-content h3 {
     clear: both;
 }
 
+.appreach img,
 .appreach p {
     margin: 0;
+    padding: 0;
 }
 
 .appreach a:after {
@@ -445,8 +453,11 @@ article .entry-content h3 {
     clear: both;
 }
 
-.appreach__name {
+p.appreach__name {
     font-size: 16px;
+    color: #555;
+    padding-bottom: 10px;
+    font-weight: bold;
     line-height: 1.5em !important;
     max-height: 3em;
     overflow: hidden;
@@ -454,6 +465,11 @@ article .entry-content h3 {
 
 .appreach__info {
     font-size: 12px !important;
+    color: #888;
+}
+
+.appreach__info a {
+    color: #aaa;
 }
 
 .appreach__developper,
@@ -468,7 +484,7 @@ article .entry-content h3 {
 .appreach__links {
     float: left;
     height: 40px;
-    margin-top: 8px;
+    margin-top: 15px;
     white-space: nowrap;
 }
 
@@ -483,21 +499,16 @@ article .entry-content h3 {
     width: 134.5px;
 }
 
-.appreach__star {
-    position: relative;
-    font-size: 14px !important;
-    height: 1.5em;
-    width: 5em;
-}
+@media only screen and (max-width: 786px) {
+    .appreach {
+        margin: 20px 0;
+    }
 
-.appreach__star__base {
-    position: absolute;
-    color: #737373;
-}
+    .appreach__info {
+        font-size: 11px !important;
+    }
 
-.appreach__star__evaluate {
-    position: absolute;
-    color: #ffc107;
-    overflow: hidden;
-    white-space: nowrap;
+    p.appreach__name {
+        font-size: 15px;
+    }
 }
