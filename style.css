@@ -107,10 +107,10 @@ article.post .entry-meta {
     margin-bottom: 40px;
 }
 
-.single-post article.post .entry-content p,
-.single-post article.post .entry-content ul,
-.single-post article.post .entry-content table,
-.single-post article.post .entry-content figure {
+.entry-content p,
+.entry-content ul,
+.entry-content table,
+.entry-content figure {
     font-size: 17px;
     margin-bottom: 60px;
 }
@@ -146,14 +146,6 @@ article .entry-content h3 {
 .page article.page .entry-title {
     font-size: 30px;
     text-align: center;
-}
-
-.page article.page .entry-content p,
-.page article.page .entry-content ul,
-.page article.page .entry-content table,
-.page article.page .entry-content figure {
-    font-size: 17px;
-    margin-bottom: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -282,10 +274,6 @@ article .entry-content h3 {
     padding-bottom: 0;
 }
 
-/* .site-footer ul li ul {
-    padding-top: 10px;
-} */
-
 /*--------------------------------------------------------------
 # SNS
 --------------------------------------------------------------*/
@@ -402,13 +390,12 @@ article .entry-content h3 {
 
 .appreach {
     border: 3px solid #eee;
-    /*ボーダー色*/
 }
 
 .appreach {
     text-align: left;
     padding: 25px;
-    margin: 20px;
+    margin: 20px 20px 60px;
     border-radius: 2px;
     overflow: hidden;
 }
