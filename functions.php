@@ -62,3 +62,16 @@ function rss_post_thumbnail($content)
 }
 add_filter('the_excerpt_rss', 'rss_post_thumbnail');
 add_filter('the_content_feed', 'rss_post_thumbnail');
+
+/**
+ * Gutenberg Editor
+ */
+
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_style('new-theme-editor-css', get_theme_file_uri('assets/style.css'));
+    wp_enqueue_script('new-theme-editor-js', get_theme_file_uri('assets/editor.js'), [
+        'wp-element',
+        'wp-rich-text',
+        'wp-editor',
+    ]);
+});
